@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-05-movies/static/js/main.07d3183d.js",
+    "main.css": "/goit-react-hw-05-movies/static/css/main.a1dc902f.css",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.bbb74182.js",
+    "static/js/103.a33c84ce.chunk.js": "/goit-react-hw-05-movies/static/js/103.a33c84ce.chunk.js",
+    "static/js/813.d9af9408.chunk.js": "/goit-react-hw-05-movies/static/js/813.d9af9408.chunk.js",
+    "static/js/170.b5ce25d0.chunk.js": "/goit-react-hw-05-movies/static/js/170.b5ce25d0.chunk.js",
+    "static/js/736.d4e2c34a.chunk.js": "/goit-react-hw-05-movies/static/js/736.d4e2c34a.chunk.js",
+    "static/js/387.a4d97a19.chunk.js": "/goit-react-hw-05-movies/static/js/387.a4d97a19.chunk.js",
+    "static/js/194.5012931d.chunk.js": "/goit-react-hw-05-movies/static/js/194.5012931d.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-05-movies/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-05-movies/static/js/main.07d3183d.js.map"
+    "main.a1dc902f.css.map": "/goit-react-hw-05-movies/static/css/main.a1dc902f.css.map",
+    "main.bbb74182.js.map": "/goit-react-hw-05-movies/static/js/main.bbb74182.js.map",
+    "103.a33c84ce.chunk.js.map": "/goit-react-hw-05-movies/static/js/103.a33c84ce.chunk.js.map",
+    "813.d9af9408.chunk.js.map": "/goit-react-hw-05-movies/static/js/813.d9af9408.chunk.js.map",
+    "170.b5ce25d0.chunk.js.map": "/goit-react-hw-05-movies/static/js/170.b5ce25d0.chunk.js.map",
+    "736.d4e2c34a.chunk.js.map": "/goit-react-hw-05-movies/static/js/736.d4e2c34a.chunk.js.map",
+    "387.a4d97a19.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.a4d97a19.chunk.js.map",
+    "194.5012931d.chunk.js.map": "/goit-react-hw-05-movies/static/js/194.5012931d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.a1dc902f.css",
+    "static/js/main.bbb74182.js"
   ]
 }
