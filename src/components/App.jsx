@@ -1,18 +1,23 @@
-// ca36f092d65c5702293abafc88e9f6b7;
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Layout from './Layout/Layout';
+import { Suspense, lazy } from 'react';
+import { Loader } from './Loader/Loader';
 
-import { NavLink } from 'react-router-dom';
+const Home = lazy(() => import('./Home/Home'));
+const Movies = lazy(() => import('./Movies/Movies'));
+const MovieDetails = lazy(() => import('./MovieDetails/MovieDetails'));
 
 export const App = () => {
   return (
-    <div>
-      <header>
-        <NavLink className="header-nav-link" to="/">
-          Home
-        </NavLink>
-        <NavLink className="header-nav-link" to="/movies">
-          Movies
-        </NavLink>
-      </header>
-    </div>
+    <Layout>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:movieId/*" element={<MovieDetails />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Suspense>
+    </Layout>
   );
 };

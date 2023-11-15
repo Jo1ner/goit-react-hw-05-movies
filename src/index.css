@@ -14,18 +14,57 @@ code {
     monospace;
 }
 
-.header-nav-link {
+.link {
   text-decoration: none;
-  color: black;
-  font-size: 20px;
+}
+
+.list {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-nav-link {
+  font-size: 40px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000000;
   padding: 20px;
   margin-right: 25px;
   display: inline-flex;
-  border: 1px solid black;
-  border-radius: 10px;
   transition: all 0.3s;
 }
+.header-nav-link:hover {
+  box-shadow: 0px 2px 4px -1px rgba(135, 83, 172, 0.2),
+    0px 4px 5px 0px rgba(135, 83, 172, 0.14),
+    0px 1px 10px 0px rgba(135, 83, 172, 0.12);
+}
 .header-nav-link.active {
-  background-color: black;
-  color: #fff;
+  color: #8854ad;
 }
