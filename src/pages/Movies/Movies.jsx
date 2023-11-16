@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { StyledLink, StyledList, StyledSearch } from './Movie.styled';
+import { StyledList, StyledSearch } from './Movie.styled';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { fetchMovieSearchByKeyword } from 'Api/GetMovies';
 import { Loader } from 'components/Loader/Loader';
+import MoviesList from 'components/MoviesList/MoviesList';
 
 const MovieDetails = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [searchMovies, setSearchMovies] = useState(null);
+  const [movies, setMovies] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -33,9 +34,9 @@ const MovieDetails = () => {
         if (data.results.length === 0) {
           alert('Nothing was found for your request');
         }
-        setSearchMovies(data.results);
+        setMovies(data.results);
       } catch (error) {
-        setSearchMovies(null);
+        setMovies(null);
         setError(error.message);
       } finally {
         setIsLoading(false);
@@ -65,21 +66,7 @@ const MovieDetails = () => {
       <StyledList>
         {error !== null && <p>{error}</p>}
         {isLoading && <Loader />}
-        {searchMovies !== null &&
-          searchMovies.map(movie => {
-            return (
-              <li>
-                <StyledLink
-                  className="list-item"
-                  key={movie.id}
-                  to={`/movies/${movie.id}`}
-                  state={{ from: location }}
-                >
-                  <h3 className="item-title">{movie.title}</h3>
-                </StyledLink>
-              </li>
-            );
-          })}
+        {movies !== null && <MoviesList movies={movies} location={location} />}
       </StyledList>
     </div>
   );

@@ -8,8 +8,8 @@ import {
   StyledMovieDetails,
 } from './MovieDetails.styled';
 
-const Cast = lazy(() => import('../Cast/Cast'));
-const Reviews = lazy(() => import('../Reviews/Reviews'));
+const Cast = lazy(() => import('../../components/Cast/Cast'));
+const Reviews = lazy(() => import('../../components/Reviews/Reviews'));
 
 const defaultImg = 'https://dummyimage.com/360x500';
 
